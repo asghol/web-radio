@@ -21,6 +21,8 @@
 <style scoped>
   img {
     height: 5em;
-    width: 5em;
+  }
+  li {
+    list-style: none;
   }
 </style>
