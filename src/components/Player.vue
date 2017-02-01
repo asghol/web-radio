@@ -1,5 +1,5 @@
 <template>
-  <audio :src="currentChannel.url" controls></audio>
+  <audio id="player" :src="currentChannel.url" controls autoplay></audio>
 </template>
 
 <script>

@@ -22,7 +22,12 @@
   img {
     height: 5em;
   }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
   li {
+    flex: 1 1 auto;
     list-style: none;
   }
 </style>

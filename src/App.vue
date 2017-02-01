@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <channels :channelList=channelList :currentChannel=currentChannel v-on:channelSelected="channelSelected"></channels>
     <player :currentChannel=currentChannel></player>
+    <channels :channelList=channelList :currentChannel=currentChannel v-on:channelSelected="channelSelected"></channels>
   </div>
 </template>
 
