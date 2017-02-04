@@ -1,12 +1,21 @@
 <template>
-  <select name="quality">
-    <option v-for="(quality, index) in qualitySettings" :value="quality.qualityIndex">{{quality.name}}</option>
+  <select name="quality" v-on:change="qualitySelected($event);">
+    <option v-for="(quality, index) in qualitySettings"
+            :selected="quality.qualityIndex == selectedQuality"
+            :value="quality.qualityIndex">
+            {{quality.name}}
+    </option>
   </select>
 </template>
 
 <script>
   export default {
     name: 'quality-selection',
-    props: [ 'qualitySettings' ]
+    props: [ 'qualitySettings', 'selectedQuality' ],
+    methods: {
+      qualitySelected (event) {
+        this.$emit('qualityChanged', event.target.value)
+      }
+    }
   }
 </script>

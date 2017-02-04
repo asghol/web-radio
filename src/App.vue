@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <player :currentChannel=currentChannel :qualitySelected=qualitySelected></player>
-    <quality-selection :qualitySettings=qualityList></quality-selection>
+    <quality-selection :qualitySettings=qualityList :selectedQuality=qualitySelected></quality-selection>
     <channels :channelList=channelList :currentChannel=currentChannel v-on:channelSelected="channelSelected"></channels>
   </div>
 </template>
@@ -160,6 +160,9 @@ export default {
   methods: {
     channelSelected (channel) {
       this.currentChannel = channel[0]
+    },
+    qualityChanged (qualityIndex) {
+      this.qualitySelected = qualityIndex
     }
   }
 }
