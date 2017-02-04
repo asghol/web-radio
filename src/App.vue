@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <player :currentChannel=currentChannel :qualitySelected=qualitySelected></player>
-    <quality-selection :qualitySettings=qualityList :selectedQuality=qualitySelected></quality-selection>
+    <quality-selection :qualitySettings=qualityList :selectedQuality=qualitySelected v-on:qualityChanged="qualityChanged"></quality-selection>
     <channels :channelList=channelList :currentChannel=currentChannel v-on:channelSelected="channelSelected"></channels>
   </div>
 </template>
