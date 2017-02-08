@@ -1,8 +1,25 @@
 <template>
   <div id="app">
-    <player :currentChannel=currentChannel :qualitySelected=qualitySelected></player>
-    <quality-selection :qualitySettings=qualityList :selectedQuality=qualitySelected v-on:qualityChanged="qualityChanged"></quality-selection>
-    <channels :channelList=channelList :currentChannel=currentChannel v-on:channelSelected="channelSelected"></channels>
+    <player :currentChannel=currentChannel
+            :qualitySelected=qualitySelected
+            :isPlaying=isPlaying
+            v-on:playing="playing"
+            v-on:loaded="loaded">
+    </player>
+    <player-controls  :currentChannel=currentChannel
+                      :isPlaying=isPlaying
+                      :isLoaded=isLoaded
+                      v-on:play="play"
+                      v-on:stop="stop">
+    </player-controls>
+    <quality-selection  :qualitySettings=qualityList
+                        :selectedQuality=qualitySelected
+                        v-on:qualityChanged="qualityChanged">
+    </quality-selection>
+    <channels :channelList=channelList
+              :currentChannel=currentChannel
+              v-on:channelSelected="channelSelected">
+    </channels>
   </div>
 </template>
 
@@ -10,13 +27,15 @@
 import Channels from './components/Channels'
 import QualitySelection from './components/QualitySelection'
 import Player from './components/Player'
+import PlayerControls from './components/PlayerControls'
 
 export default {
   name: 'app',
   components: {
     Channels,
     QualitySelection,
-    Player
+    Player,
+    PlayerControls
   },
   data () {
     return {
@@ -154,7 +173,9 @@ export default {
         }
       ],
       currentChannel: {},
-      qualitySelected: 0
+      qualitySelected: 0,
+      isLoaded: false,
+      isPlaying: false
     }
   },
   methods: {
@@ -163,6 +184,19 @@ export default {
     },
     qualityChanged (qualityIndex) {
       this.qualitySelected = qualityIndex
+    },
+    playing () {
+      this.isPlaying = true
+    },
+    loaded () {
+      this.isLoaded = true
+    },
+    play (playbackToggle) {
+      this.isPlaying = playbackToggle
+    },
+    stop () {
+      this.isLoaded = false
+      this.currentChannel = {}
     }
   }
 }

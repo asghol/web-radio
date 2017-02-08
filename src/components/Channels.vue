@@ -29,5 +29,6 @@
   li {
     flex: 1 1 auto;
     list-style: none;
+    width: 140px;
   }
 </style>
