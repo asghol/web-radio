@@ -35,6 +35,10 @@
 </script>
 
 <style scoped>
+  div {
+    display: inline-flex;
+  }
+
   figure button {
     width: 50px;
     height: 50px;
@@ -43,6 +47,10 @@
     border-radius: 100%;
     margin: auto;
     cursor: pointer;
+  }
+
+  figure button:disabled {
+    background: grey;
   }
 
   figure button:focus {
