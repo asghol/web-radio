@@ -196,6 +196,7 @@ export default {
     },
     stop () {
       this.isLoaded = false
+      this.isPlaying = false
       this.currentChannel = {}
     }
   }
