@@ -42,7 +42,7 @@ export default {
       channelList: [
         {
           name: 'P4',
-          image: '/static/p4.png',
+          image: '/static/img/p4.png',
           url: {
             0: 'http://stream.p4.no/p4_aac_lq',
             1: 'http://stream.p4.no/p4_aac_mq',
@@ -51,7 +51,7 @@ export default {
         },
         {
           name: 'P5 Hits',
-          image: '/static/p5hits.png',
+          image: '/static/img/p5hits.png',
           url: {
             0: 'http://stream.p4.no/p5oslo_aac_lq',
             1: 'http://stream.p4.no/p5oslo_aac_mq',
@@ -60,7 +60,7 @@ export default {
         },
         {
           name: 'P5 Hits Bergen',
-          image: '/static/p5hitsbergen.png',
+          image: '/static/img/p5hitsbergen.png',
           url: {
             0: 'http://stream.p4.no/p5bergen_aac_lq',
             1: 'http://stream.p4.no/p5bergen_aac_mq',
@@ -69,7 +69,7 @@ export default {
         },
         {
           name: 'P6 Rock',
-          image: '/static/p6rock.png',
+          image: '/static/img/p6rock.png',
           url: {
             0: 'http://stream.p4.no/p6_aac_lq',
             1: 'http://stream.p4.no/p6_aac_mq',
@@ -78,7 +78,7 @@ export default {
         },
         {
           name: 'P7 Klem',
-          image: '/static/p7klem.png',
+          image: '/static/img/p7klem.png',
           url: {
             0: 'http://stream.p4.no/p7_aac_lq',
             1: 'http://stream.p4.no/p7_aac_mq',
@@ -87,7 +87,7 @@ export default {
         },
         {
           name: 'NRJ',
-          image: '/static/nrj.png',
+          image: '/static/img/nrj.png',
           url: {
             0: 'http://stream.p4.no/nrj_aac_lq',
             1: 'http://stream.p4.no/nrj_aac_mq',
@@ -96,7 +96,7 @@ export default {
         },
         {
           name: 'P8 Pop',
-          image: '/static/p8pop.png',
+          image: '/static/img/p8pop.png',
           url: {
             0: 'http://stream.p4.no/p8_aac_lq',
             1: 'http://stream.p4.no/p8_aac_mq',
@@ -105,7 +105,7 @@ export default {
         },
         {
           name: 'P9 Retro',
-          image: '/static/p9retro.png',
+          image: '/static/img/p9retro.png',
           url: {
             0: 'http://stream.p4.no/p9_aac_lq',
             1: 'http://stream.p4.no/p9_aac_mq',
@@ -114,7 +114,7 @@ export default {
         },
         {
           name: 'P10 Country',
-          image: '/static/p10country.png',
+          image: '/static/img/p10country.png',
           url: {
             0: 'http://stream.p4.no/p10_aac_lq',
             1: 'http://stream.p4.no/p10_aac_mq',
@@ -123,7 +123,7 @@ export default {
         },
         {
           name: 'Bandit',
-          image: '/static/bandit.png',
+          image: '/static/img/bandit.png',
           url: {
             0: 'http://stream.p4.no/bandit_aac_lq',
             1: 'http://stream.p4.no/bandit_aac_mq',
@@ -132,7 +132,7 @@ export default {
         },
         {
           name: 'P5 Nonstop Hits',
-          image: '/static/p5nonstophits.png',
+          image: '/static/img/p5nonstophits.png',
           url: {
             0: 'http://stream.p4.no/p5nonstophits_aac_lq',
             1: 'http://stream.p4.no/p5nonstophits_aac_mq',
@@ -141,7 +141,7 @@ export default {
         },
         {
           name: 'P5 Hits Trondheim',
-          image: '/static/p5hitstrondheim.png',
+          image: '/static/img/p5hitstrondheim.png',
           url: {
             0: 'http://stream.p4.no/p5trondheim_aac_lq',
             1: 'http://stream.p4.no/p5trondheim_aac_mq',
@@ -150,7 +150,7 @@ export default {
         },
         {
           name: 'P5 Hits Stavanger',
-          image: '/static/p5hitsstavanger.png',
+          image: '/static/img/p5hitsstavanger.png',
           url: {
             0: 'http://stream.p4.no/p5stavanger_aac_lq',
             1: 'http://stream.p4.no/p5stavanger_aac_mq',
