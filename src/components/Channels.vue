@@ -23,12 +23,14 @@
     height: 5em;
   }
   ul {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
   }
   li {
     flex: 1 1 auto;
     list-style: none;
-    width: 140px;
+    width: 10em;
   }
 </style>
