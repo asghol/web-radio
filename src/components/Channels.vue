@@ -19,9 +19,6 @@
 </script>
 
 <style scoped>
-  img {
-    height: 5em;
-  }
   ul {
     margin: 0;
     padding: 0;
@@ -32,5 +29,20 @@
     flex: 1 1 auto;
     list-style: none;
     width: 10em;
+  }
+  img {
+    height: 5em;
+  }
+
+  @media (min-width: 320px) {
+    ul {
+      margin: 0 0 0 2.6em;
+    }
+    li {
+      width: 8.2em;
+    }
+    img {
+      height: 3em;
+    }
   }
 </style>
