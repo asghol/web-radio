@@ -1,0 +1,122 @@
+{
+  "name": "P4",
+  "channelList": [
+    {
+      "name": "P4",
+      "image": "/static/img/p4.png",
+      "url": {
+        "0": "http://stream.p4.no/p4_aac_lq",
+        "1": "http://stream.p4.no/p4_aac_mq",
+        "2": "http://stream.p4.no/p4_mp3_hq"
+      }
+    },
+    {
+      "name": "P5 Hits",
+      "image": "/static/img/p5hits.png",
+      "url": {
+        "0": "http://stream.p4.no/p5oslo_aac_lq",
+        "1": "http://stream.p4.no/p5oslo_aac_mq",
+        "2": "http://stream.p4.no/p5oslo_mp3_hq"
+      }
+    },
+    {
+      "name": "P5 Hits Bergen",
+      "image": "/static/img/p5hitsbergen.png",
+      "url": {
+        "0": "http://stream.p4.no/p5bergen_aac_lq",
+        "1": "http://stream.p4.no/p5bergen_aac_mq",
+        "2": "http://stream.p4.no/p5bergen_mp3_hq"
+      }
+    },
+    {
+      "name": "P6 Rock",
+      "image": "/static/img/p6rock.png",
+      "url": {
+        "0": "http://stream.p4.no/p6_aac_lq",
+        "1": "http://stream.p4.no/p6_aac_mq",
+        "2": "http://stream.p4.no/p6_mp3_hq"
+      }
+    },
+    {
+      "name": "P7 Klem",
+      "image": "/static/img/p7klem.png",
+      "url": {
+        "0": "http://stream.p4.no/p7_aac_lq",
+        "1": "http://stream.p4.no/p7_aac_mq",
+        "2": "http://stream.p4.no/p7_mp3_hq"
+      }
+    },
+    {
+      "name": "NRJ",
+      "image": "/static/img/nrj.png",
+      "url": {
+        "0": "http://stream.p4.no/nrj_aac_lq",
+        "1": "http://stream.p4.no/nrj_aac_mq",
+        "2": "http://stream.p4.no/nrj_mp3_hq"
+      }
+    },
+    {
+      "name": "P8 Pop",
+      "image": "/static/img/p8pop.png",
+      "url": {
+        "0": "http://stream.p4.no/p8_aac_lq",
+        "1": "http://stream.p4.no/p8_aac_mq",
+        "2": "http://stream.p4.no/p8_mp3_hq"
+      }
+    },
+    {
+      "name": "P9 Retro",
+      "image": "/static/img/p9retro.png",
+      "url": {
+        "0": "http://stream.p4.no/p9_aac_lq",
+        "1": "http://stream.p4.no/p9_aac_mq",
+        "2": "http://stream.p4.no/p9_mp3_hq"
+      }
+    },
+    {
+      "name": "P10 Country",
+      "image": "/static/img/p10country.png",
+      "url": {
+        "0": "http://stream.p4.no/p10_aac_lq",
+        "1": "http://stream.p4.no/p10_aac_mq",
+        "2": "http://stream.p4.no/p10_mp3_hq"
+      }
+    },
+    {
+      "name": "Bandit",
+      "image": "/static/img/bandit.png",
+      "url": {
+        "0": "http://stream.p4.no/bandit_aac_lq",
+        "1": "http://stream.p4.no/bandit_aac_mq",
+        "2": "http://stream.p4.no/bandit_mp3_hq"
+      }
+    },
+    {
+      "name": "P5 Nonstop Hits",
+      "image": "/static/img/p5nonstophits.png",
+      "url": {
+        "0": "http://stream.p4.no/p5nonstophits_aac_lq",
+        "1": "http://stream.p4.no/p5nonstophits_aac_mq",
+        "2": "http://stream.p4.no/p5nonstophits_mp3_hq"
+      }
+    },
+    {
+      "name": "P5 Hits Trondheim",
+      "image": "/static/img/p5hitstrondheim.png",
+      "url": {
+        "0": "http://stream.p4.no/p5trondheim_aac_lq",
+        "1": "http://stream.p4.no/p5trondheim_aac_mq",
+        "2": "http://stream.p4.no/p5trondheim_mp3_hq"
+      }
+    },
+    {
+      "name": "P5 Hits Stavanger",
+      "image": "/static/img/p5hitsstavanger.png",
+      "url": {
+        "0": "http://stream.p4.no/p5stavanger_aac_lq",
+        "1": "http://stream.p4.no/p5stavanger_aac_mq",
+        "2": "http://stream.p4.no/p5stavanger_mp3_hq"
+      }
+    }
+  ]
+}
