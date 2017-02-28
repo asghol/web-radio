@@ -12,6 +12,10 @@
                       v-on:play="play"
                       v-on:stop="stop">
     </player-controls>
+    <package-selector :packages=packages
+                      :selectedPackage=selectedPackage
+                      v-on:packageSelected="packageSelected">
+    </package-selector>
     <quality-selection  :qualitySettings=qualityList
                         :selectedQuality=qualitySelected
                         v-on:qualityChanged="qualityChanged">
@@ -25,6 +29,7 @@
 
 <script>
 import Channels from './components/Channels'
+import PackageSelector from './components/PackageSelector'
 import QualitySelection from './components/QualitySelection'
 import Player from './components/Player'
 import PlayerControls from './components/PlayerControls'
@@ -34,18 +39,13 @@ export default {
   name: 'app',
   components: {
     Channels,
+    PackageSelector,
     QualitySelection,
     Player,
     PlayerControls
   },
   mounted: function () {
-    axios.get('/static/channels.json')
-      .then(payload => {
-        this.channelList = payload.data.packages[0].channelList
-      })
-      .catch(error => {
-        console.log(error)
-      })
+    this.getChannelPacakges()
   },
   data () {
     return {
@@ -65,12 +65,18 @@ export default {
         }
       ],
       currentChannel: {},
+      selectedPackage: null,
+      packages: [],
       qualitySelected: 0,
       isLoaded: false,
       isPlaying: false
     }
   },
   methods: {
+    packageSelected (channelPackage) {
+      this.selectedPackage = channelPackage
+      this.channelList = this.selectedPackage.channelList
+    },
     channelSelected (channel) {
       this.currentChannel = channel[0]
     },
@@ -90,6 +96,21 @@ export default {
       this.isLoaded = false
       this.isPlaying = false
       this.currentChannel = {}
+    },
+
+    getChannelPacakges () {
+      var _this = this
+      axios.get('/static/channels.json')
+        .then(payload => {
+          _this.packages = payload.data.packages
+          if (_this.selectedPackage === null) {
+            _this.selectedPackage = _this.packages[0]
+          }
+          _this.channelList = _this.selectedPackage.channelList
+        })
+        .catch(error => {
+          console.log(error)
+        })
     }
   }
 }
