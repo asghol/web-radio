@@ -1,7 +1,12 @@
 <template>
   <ul>
     <li v-for="(channel, index) in channelList">
-      <img :src="channel.image" v-on:click="channelSelected(channel);"></img>
+      <div v-if="channel.image">
+        <img :src="channel.image" v-on:click="channelSelected(channel);"></img>
+      </div>
+      <div v-else>
+        <button v-on:click="channelSelected(channel);">{{channel.name}}</button>
+      </div>
     </li>
   </ul>
 </template>
@@ -20,7 +25,7 @@
 
 <style scoped>
   ul {
-    margin: 0;
+    margin: 1em;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -35,9 +40,6 @@
   }
 
   @media (min-width: 320px) {
-    ul {
-      margin: 0 0 0 2.6em;
-    }
     li {
       width: 8.2em;
     }

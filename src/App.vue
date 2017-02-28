@@ -41,7 +41,7 @@ export default {
   mounted: function () {
     axios.get('/static/channels.json')
       .then(payload => {
-        this.channelList = payload.data.channelList
+        this.channelList = payload.data.packages[0].channelList
       })
       .catch(error => {
         console.log(error)
