@@ -120,6 +120,20 @@
             "2": "http://stream.p4.no/p5stavanger_mp3_hq"
           }
         }
+      ],
+      "qualityOptions": [
+        {
+          "name": "High",
+          "qualityIndex": 2
+        },
+        {
+          "name": "Medium",
+          "qualityIndex": 1
+        },
+        {
+          "name": "Low",
+          "qualityIndex": 0
+        }
       ]
     },
     {
@@ -188,6 +202,16 @@
             "0": "http://tx-bauerno.sharp-stream.com/http_live.php?i=norskpop_no_aac",
             "1": "http://tx-bauerno.sharp-stream.com/http_live.php?i=norskpop_no_mp3"
           }
+        }
+      ],
+      "qualityOptions": [
+        {
+          "name": "Medium",
+          "qualityIndex": 1
+        },
+        {
+          "name": "Low",
+          "qualityIndex": 0
         }
       ]
     }

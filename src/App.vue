@@ -16,7 +16,7 @@
                       :selectedPackage=selectedPackage
                       v-on:packageSelected="packageSelected">
     </package-selector>
-    <quality-selection  :qualitySettings=qualityList
+    <quality-selection  :selectedPackage=selectedPackage
                         :selectedQuality=qualitySelected
                         v-on:qualityChanged="qualityChanged">
     </quality-selection>
@@ -50,20 +50,6 @@ export default {
   data () {
     return {
       channelList: [],
-      qualityList: [
-        {
-          name: 'High',
-          qualityIndex: 2
-        },
-        {
-          name: 'Medium',
-          qualityIndex: 1
-        },
-        {
-          name: 'Low',
-          qualityIndex: 0
-        }
-      ],
       currentChannel: {},
       selectedPackage: null,
       packages: [],
